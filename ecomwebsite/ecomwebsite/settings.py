@@ -24,7 +24,7 @@ import os
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["ecomwebsitepuneet.herokuapp.com","localhost"]
 
@@ -132,4 +132,4 @@ LOGIN_REDIRECT_URL = '/profile/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SESSION_ENGINE = "django.contrib.sessions.backends.db"
 
-STATIC_ROOT = BASE_DIR/ 'static'
+STATIC_ROOT = BASE_DIR/ 'media'
